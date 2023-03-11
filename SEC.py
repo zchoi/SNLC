@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from typing import Optional
 
+# Semantic embedding contrastive (SEC) loss.
 class SEC(nn.Module):
     '''compute contrastive loss
     '''
