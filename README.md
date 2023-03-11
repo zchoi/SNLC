@@ -61,6 +61,12 @@ for batch in dataset.train:
   optim.zero_grad()
 
 ```
+## Experiments
+Performance for noisy learning on BAN model and the effect of the proposed SNLC. All values are reported as accuracy (%). For more experimental results, please refer to our [paper](https://www.sciencedirect.com/science/article/pii/S0031320323000407)
+
+<p align="center">
+    <img src=pic\ban.png alt="Framework"  width="100%">
+</p>
 
 
 ## Citation
