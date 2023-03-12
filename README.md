@@ -27,7 +27,7 @@ Below we demonstrate the performance degradation of VQA models (*i.e.*, [UpDn](h
 
 <p align="center">
     <img src=pic\performance.png  width="100%">
-    <span><b>Figure 3. Performance degradation on VQA-Noise v2. </b></span>
+    <span><b>Figure 3. Performance degradation of UpDn model on VQA-Noise v2. </b></span>
 </p>
 
 ## Method
