@@ -10,6 +10,7 @@ Visual Question Answering (VQA) has made great progress recently due to the incr
     <span><b>Figure 1. Left: Motivation. Right: Visualization of semantic space of candidate answers by t-SNE.</b></span>
 </p>
 
+
 ## VQA-Noise v1 and VQA-Noise v2 Benchmarks
 
 We adopt semantic similarity to guide the generation of noisy labels in a controlled manner and build new datasets: VQA-Noise v1 and VQA-Noise v2. Specifically, we first adopt the pre-trained word embedding (*e.g.*, [BERT](https://huggingface.co/bert-base-uncased) and [Glove](https://nlp.stanford.edu/projects/glove/)) to embed all candidate answers into an answer-based semantic embedding space (**Fig.1 Right**). Then, we randomly sample image-question pairs at a sample rate of $\boldsymbol{p}\in[0.2, 0.4, 0.6, 0.8]$. The ground-truth answer of each sampled pair is replaced with a pseudo label, which is randomly selected from the top-K answers that are semantically similar to the ground-truth answer
