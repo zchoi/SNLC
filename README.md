@@ -18,7 +18,7 @@ We adopt semantic similarity to guide the generation of noisy labels in a contro
 > **Note**: The generated noisy annotations of [**VQA-Noise v1**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) and [**VQA-Noise v2**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) are available.
 
 <p align="center">
-    <img src=pic\noise_examples.png  width="100%">
+    <img src=pic\introduction.png  width="100%">
     <span><b>Figure 2. Selected examples of generated semantic noisy labels from VQA-Noise v2. </b></span>
 </p>
 
