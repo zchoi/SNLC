@@ -5,8 +5,8 @@
 Visual Question Answering (VQA) has made great progress recently due to the increasing ability to understand and encode multi-modal inputs based on deep learning. However, existing VQA models are usually based on assumptions of clean labels, and it is contradictory to real scenarios where labels are expensive and inevitably contain noises. In this paper, we take the lead in addressing this issue by establishing the first benchmark of controlled semantic noisy labels for VQA task, evaluating existing methods, and coming up with corresponding solutions. 
 
 <p align="center">
-    <img src=pic\introduction.png  width="45%">
-    <img src=pic\distribution.png  width="50%" height="20%">
+    <img src=pic/introduction.png  width="45%">
+    <img src=pic/distribution.png  width="50%" height="20%">
     <span><b>Figure 1. Left: Motivation. Right: Visualization of semantic space of candidate answers by t-SNE.</b></span>
 </p>
 
@@ -18,7 +18,7 @@ We adopt semantic similarity to guide the generation of noisy labels in a contro
 > **Note**: The generated noisy annotations of [**VQA-Noise v1**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) and [**VQA-Noise v2**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) are available.
 
 <p align="center">
-    <img src=pic\introduction.png  width="100%">
+    <img src=pic/introduction.png  width="100%">
     <span><b>Figure 2. Selected examples of generated semantic noisy labels from VQA-Noise v2. </b></span>
 </p>
 
@@ -27,14 +27,14 @@ We adopt semantic similarity to guide the generation of noisy labels in a contro
 Below we demonstrate the performance degradation of VQA models (*i.e.*, [UpDn](https://github.com/hengyuan-hu/bottom-up-attention-vqa)) on our noisy VQA benchmarks, which shows the vulnerabilities of existing approaches to noisy learning.
 
 <p align="center">
-    <img src=pic\performance.png  width="100%">
+    <img src=pic/performance.png  width="100%">
     <span><b>Figure 3. Performance degradation of UpDn model on VQA-Noise v2. </b></span>
 </p>
 
 ## Method
 Overview of general VQA models with our proposed SNLC for learning with controlled semantic noisy labels. Specifically, SNLC includes **Semantic Cross-Entropy (SCE)** loss and **Semantic Embedding Contrastive (SEC)** loss. SCE loss tolerates a wide range of noisy labels and SEC loss obtains a robust representation in answer embedding space.
 <p align="center">
-    <img src=pic\framework.png alt="Framework"  width="100%">
+    <img src=pic/framework.png alt="Framework"  width="100%">
     <span><b>Figure 4. Overall Framework.</b></span>
 </p>
 
@@ -66,7 +66,7 @@ for batch in dataset.train:
 Performance for noisy learning on BAN model and the effect of the proposed SNLC. All values are reported as accuracy (%). For more experimental results, please refer to our [paper](https://www.sciencedirect.com/science/article/pii/S0031320323000407)
 
 <p align="center">
-    <img src=pic\ban.png alt="experiment"  width="100%">
+    <img src=pic/ban.png alt="experiment"  width="100%">
 </p>
 
 
