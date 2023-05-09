@@ -6,7 +6,7 @@ Visual Question Answering (VQA) has made great progress recently due to the incr
 
 <p align="center">
     <img src=pic/introduction.png  width="45%">
-    <img src=pic/distribution.png  width="50%" height="20%">
+    <img src=pic/distribution.png  width="50%" height="20%"> <br>
     <span><b>Figure 1. Left: Motivation. Right: Visualization of semantic space of candidate answers by t-SNE.</b></span>
 </p>
 
@@ -18,7 +18,8 @@ We adopt semantic similarity to guide the generation of noisy labels in a contro
 > **Note**: The generated noisy annotations of [**VQA-Noise v1**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) and [**VQA-Noise v2**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) are available.
 
 <p align="center">
-    <img src=pic/introduction.png  width="50%"> <br>
+    <img src=pic/intro1.png  width="54%">
+    <img src=pic/intro2.png  width="45%" height="20%"> <br>
     <span><b>Figure 2. Selected examples of generated semantic noisy labels from VQA-Noise v2. </b></span>
 </p>
 
