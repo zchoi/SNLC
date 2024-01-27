@@ -14,7 +14,8 @@ Visual Question Answering (VQA) has made great progress recently due to the incr
 
 We adopt semantic similarity to guide the generation of noisy labels in a controlled manner and build new datasets: VQA-Noise v1 and VQA-Noise v2. Specifically, we first adopt the pre-trained word embedding (*e.g.*, [BERT](https://huggingface.co/bert-base-uncased) and [Glove](https://nlp.stanford.edu/projects/glove/)) to embed all candidate answers into an answer-based semantic embedding space (**Fig.1 Right**). Then, we randomly sample image-question pairs at a sample rate of $\boldsymbol{p}\in[0.2, 0.4, 0.6, 0.8]$. The ground-truth answer of each sampled pair is replaced with a pseudo label, which is randomly selected from the top-K answers that are semantically similar to the ground-truth answer
 
-> **Note**: The generated noisy annotations of [**VQA-Noise v1**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) and [**VQA-Noise v2**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) are available.
+> [!NOTE]
+> The generated noisy annotations of [**VQA-Noise v1**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) and [**VQA-Noise v2**](https://drive.google.com/drive/folders/1sdNvgn9zoBjDOhJA9lFsVba3ZM6ac7xT?usp=sharing) are available.
 
 <p align="center">
     <img src=pic/intro1.png  width="54%">
@@ -39,7 +40,8 @@ Overview of general VQA models with our proposed SNLC for learning with controll
 </p>
 
 ------
-> **Note**: It should be straightforward to adopt ```SCE``` and ```SEC``` in pipeline when training your noisy-robust model on VQA-Noise v1/v2.
+> [!TIP]
+> It should be straightforward to adopt ```SCE``` and ```SEC``` in pipeline when training your noisy-robust model on VQA-Noise v1/v2.
 
 ```python
 from SCE import SCE
@@ -72,7 +74,7 @@ Performance for noisy learning on BAN model and the effect of the proposed SNLC.
 
 ## Citation
 ```bibtex
-@article{ZHANG2023109339,
+@article{SNLC,
 title = {Learning visual question answering on controlled semantic noisy labels},
 journal = {Pattern Recognition},
 volume = {138},
