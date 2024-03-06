@@ -1,5 +1,5 @@
-# Learning Visual Question Answering on Controlled Semantic Noisy Labels 🍃 [[**Pattern Recognition 2023**](https://www.sciencedirect.com/science/article/pii/S0031320323000407)] <br>
-> <a href="https://github.com/zchoi">Haonan Zhang</a>, <a href="https://ppengzeng.github.io/">Pengpeng Zeng</a>,  Yuxuan Hu, Jin Qian, <a href="https://cfm.uestc.edu.cn/~songjingkuan/">Jingkuan Song</a>, <a href="https://lianligao.github.io/">Lianli Gao</a>
+# Learning Visual Question Answering on Controlled Semantic Noisy Labels 🍃 <be>
+> <a href="https://github.com/zchoi">Haonan Zhang</a>, <a href="https://ppengzeng.github.io/">Pengpeng Zeng</a>,  Yuxuan Hu, Jin Qian, <a href="https://cfm.uestc.edu.cn/~songjingkuan/">Jingkuan Song</a>, <a href="https://lianligao.github.io/">Lianli Gao</a> (PR2023)
 ## Overview 
 Visual Question Answering (VQA) has made great progress recently due to the increasing ability to understand and encode multi-modal inputs based on deep learning. However, existing VQA models are usually based on assumptions of clean labels, and it is contradictory to real scenarios where labels are expensive and inevitably contain noises. In this paper, we take the lead in addressing this issue by establishing the first benchmark of controlled semantic noisy labels for VQA task, evaluating existing methods, and coming up with corresponding solutions. 
 
